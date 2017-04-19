@@ -1,0 +1,70 @@
+body{
+  background: url("img/4.jpg") no-repeat;
+  background-position: 50% 75px;
+}
+.cen{
+  border: 1px solid black;
+  width: 1000px;
+  padding: 10px;
+}
+.hmsc{
+  float: left;
+  margin: 0 365px 0 0;
+}
+.h{
+
+}
+.m{
+
+}
+.s{
+
+}
+.c{
+
+}
+
+.lr{
+
+}
+.l{
+
+}
+.r{
+
+}
+.inl{
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.form_regi{
+  margin: 25px 0 0 0;
+}
+.form_regi input{
+  margin: 10px 0 0 0;
+}
+.form_login{
+  margin: 25px 0 0 0;
+}
+.form_login input{
+  margin: 10px 0 0 0;
+}
+.home_1{
+  border-bottom: 1px solid black;
+}
+.home_2{
+
+}
+.cont_l{
+  float: left;
+  width: 50%;
+  height: 250px;
+}
+.cont_r{
+  width: 50%;
+  text-align: left;
+}
+.contacts_b{
+  border: 1px solid black;
+  width: 370px;
+}
