@@ -5,6 +5,7 @@ $db = $c['dbname'];
 $u = $c['user'];
 $p = $c['pass'];
 $pdo = new PDO("mysql:host=$h;dbname=$db", $u, $p);
+print_r($pdo->errorInfo());
 
 if($_POST['url'] == 'registration') {
   $url = $_POST['url'];
