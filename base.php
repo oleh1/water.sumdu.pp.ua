@@ -5,7 +5,6 @@ $db = $c['dbname'];
 $u = $c['user'];
 $p = $c['pass'];
 $pdo = new PDO("mysql:host=$h;dbname=$db", $u, $p);
-print_r($pdo->errorInfo());
 
 if($_POST['url'] == 'registration') {
   $url = $_POST['url'];
@@ -32,6 +31,7 @@ if($_POST['url'] == 'registration') {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=2');
   } else {
     $pdo->query("INSERT INTO users VALUES(null, '{$name}', '{$mail}', '{$pas}')");
+    print_r($pdo->errorInfo());
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=1');
   }
 }
