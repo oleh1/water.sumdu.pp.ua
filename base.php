@@ -44,7 +44,7 @@ if($_POST['url'] == 'login') {
   $pas = $_POST['pass'];
 
   $r = $pdo->prepare("SELECT * FROM users WHERE user_name = :user_name OR pass = :pass");
-  $r->bindParam(':user_name', $user_name);
+  $r->bindParam(':user_name', $name);
   $r->bindParam(':pass', $pas);
   $r->execute();
   $r = $r->fetchAll();
