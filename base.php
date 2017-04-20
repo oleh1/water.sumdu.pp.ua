@@ -5,6 +5,7 @@ $db = $c['dbname'];
 $u = $c['user'];
 $p = $c['pass'];
 $pdo = new PDO("mysql:host=$h;dbname=$db", $u, $p);
+$m = new mysqli($h, $u, $p, $db);
 
 if($_POST['url'] == 'registration') {
   $url = $_POST['url'];
@@ -30,12 +31,9 @@ if($_POST['url'] == 'registration') {
   if ($r) {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=2');
   } else {
-    try {
-      $pdo->query("INSERT INTO users VALUES(null, '{$name}', '{$mail}', '{$pas}')");
-      $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-      echo $e->getMessage();
-    }
+
+    $m->query("INSERT INTO users VALUES(null, '{$name}', '{$mail}', '{$pas}')");
+
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=1');
   }
 }
