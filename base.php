@@ -30,8 +30,12 @@ if($_POST['url'] == 'registration') {
   if ($r) {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=2');
   } else {
-    $pdo->query("INSERT INTO users VALUES(null, '{$name}', '{$mail}', '{$pas}')");
-    print_r($pdo->errorInfo());
+    try {
+      $pdo->query("INSERT INTO users VALUES(null, '{$name}', '{$mail}', '{$pas}')");
+      $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=1');
   }
 }
