@@ -13,8 +13,8 @@ if($_POST['url'] == 'registration') {
   $pass = $_POST['pass'];
   $pass_r = $_POST['pass_r'];
 
-  $r = $pdo->prepare("SELECT * FROM users WHERE user_name = :user_name AND mail = :mail");
-  $r->bindParam(':user_name', $user_name);
+  $r = $pdo->prepare("SELECT * FROM users WHERE user_name = :user_name OR mail = :mail");
+  $r->bindParam(':user_name', $name);
   $r->bindParam(':mail', $mail);
   $r->execute();
   $r = $r->fetchAll();
