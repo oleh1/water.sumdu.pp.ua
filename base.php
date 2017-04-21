@@ -5,7 +5,6 @@ $db = $c['dbname'];
 $u = $c['user'];
 $p = $c['pass'];
 $pdo = new PDO("mysql:host=$h;dbname=$db", $u, $p);
-$m = new mysqli($h, $u, $p, $db);
 
 if($_POST['url'] == 'registration') {
   $url = $_POST['url'];
@@ -26,7 +25,6 @@ if($_POST['url'] == 'registration') {
   $r->bindParam(':mail', $mail);
   $r->execute();
   $r = $r->fetchAll();
-  var_dump($r);
 
   if ($r) {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=2');
