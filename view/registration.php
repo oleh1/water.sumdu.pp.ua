@@ -5,7 +5,7 @@
   <?php }else if($_GET['n'] == 1){ ?>
     <div style="color: green;">Вы успешно зарегестрировались</div>
   <?php }else if($_GET['n'] == 2){ ?>
-  <div style="color: red;">Такой логин или пароль существует</div>
+  <div style="color: red;">Такой логин или E-mail уже существует</div>
   <?php } ?>
   <div>
     <form action="../base.php" method="POST">
