@@ -32,7 +32,7 @@ if($_POST['url'] == 'registration') {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=2');
   } else {
 
-    $pdo->query("INSERT INTO users VALUES('aaa', 'aaa', 'aaa')");
+    $pdo->query("INSERT INTO users VALUES(null, 'aaa', 'aaa', 'aaa')");
 
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=1');
   }
