@@ -12,13 +12,6 @@ if($_POST['url'] == 'registration') {
   $mail = $_POST['mail'];
   $pass = $_POST['pass'];
   $pass_r = $_POST['pass_r'];
-  if ($pass && $pass_r) {
-    if ($pass == $pass_r) {
-      $pas = $pass;
-    } else {
-      header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=10');
-    }
-  }
 
   $r = $pdo->prepare("SELECT * FROM users WHERE user_name = :user_name OR mail = :mail");
   $r->bindParam(':user_name', $user_name);
@@ -28,7 +21,9 @@ if($_POST['url'] == 'registration') {
 
   if ($r) {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=2');
-  } else {
+  } else if($pass != $pass_r){
+    header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=3');
+  }else{
 
     $pdo->query("INSERT INTO users VALUES(null, '{$name}', '{$mail}', '{$pass}')");
 
@@ -39,11 +34,11 @@ if($_POST['url'] == 'registration') {
 if($_POST['url'] == 'login') {
   $url = $_POST['url'];
   $name = $_POST['name'];
-  $pas = $_POST['pass'];
+  $pass = $_POST['pass'];
 
   $r = $pdo->prepare("SELECT * FROM users WHERE user_name = :user_name OR pass = :pass");
   $r->bindParam(':user_name', $name);
-  $r->bindParam(':pass', $pas);
+  $r->bindParam(':pass', $pass);
   $r->execute();
   $r = $r->fetchAll();
   if ($r) {

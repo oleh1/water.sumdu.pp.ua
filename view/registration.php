@@ -1,6 +1,6 @@
 <div class="form_regi">
   <div>Новый пользователь</div>
-  <?php if($_GET['n'] == 10){ ?>
+  <?php if($_GET['n'] == 3){ ?>
     <div style="color: red;">Повтор пароля введен неправильно</div>
   <?php }else if($_GET['n'] == 1){ ?>
     <div style="color: green;">Вы успешно зарегестрировались</div>
