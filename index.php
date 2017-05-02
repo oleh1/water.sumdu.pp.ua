@@ -14,8 +14,8 @@
 
     <div>
       <div class="hmsc">
-        <div class="h inl"><a href="home">Главная</a></div>
-        <div class="m inl"><a href="map">Карта качества воды</a></div>
+        <div class="h inl"><a href="home">О воде</a></div>
+        <div class="m inl"><a href="map">Очистка воды</a></div>
         <div class="s inl"><a href="standards">Санитарные нормы</a></div>
         <div class="c inl"><a href="contacts">Контакты</a></div>
       </div>

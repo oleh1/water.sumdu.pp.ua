@@ -1,9 +1,9 @@
 body{
-  background: url("img/4.jpg") no-repeat;
-  background-position: 50% 75px;
+  /*background: url("img/4.jpg") no-repeat;*/
+  /*background-position: 50% 75px;*/
 }
 .cen{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 1000px;
   padding: 10px;
 }
@@ -67,4 +67,17 @@ body{
 .contacts_b{
   border: 1px solid black;
   width: 370px;
+}
+
+.textt{
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.textt1 li{
+  text-align: justify;
+}
+
+ul li{
+  text-align: justify;
 }
