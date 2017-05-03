@@ -57,16 +57,18 @@ body{
 }
 .cont_l{
   float: left;
-  width: 50%;
+  width: 40%;
   height: 250px;
 }
 .cont_r{
-  width: 50%;
+  float: left;
+  width: 60%;
   text-align: left;
 }
 .contacts_b{
+  padding: 5px;
   border: 1px solid black;
-  width: 370px;
+  /*width: 370px;*/
 }
 
 .textt{
