@@ -19,6 +19,13 @@
         <div class="s inl"><a href="standards">Санитарные нормы</a></div>
         <div class="inl"><a href="water_purification">Очистка воды</a></div>
         <div class="c inl"><a href="contacts">Контакты</a></div>
+        <?php
+        if( $_SESSION['name'] ){
+          ?>
+          <div class="inl">Личный кабинет</div>
+          <?php
+        }
+        ?>
       </div>
       
       <div class="lr">
