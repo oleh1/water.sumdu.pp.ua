@@ -55,6 +55,6 @@ if($_POST['room'] == 'exit') {
 //  session_unregister('name');
 //  session_destroy();
   $_SESSION['name'] = '';
-  header('Location: http://' . $_SERVER["HTTP_HOST"]);
+  header('Location: http://' . $_SERVER["HTTP_HOST"] . '?tt=1');
 }
 ?>
