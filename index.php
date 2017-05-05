@@ -20,6 +20,7 @@
         <div class="inl"><a href="water_purification">Очистка воды</a></div>
         <div class="c inl"><a href="contacts">Контакты</a></div>
         <?php
+        var_dump( $_SESSION['name'] );
         if( $_SESSION['name'] ){
           ?>
           <div class="inl"><a href="room">Личный кабинет</a></div>
