@@ -22,6 +22,11 @@
       </div>
       
       <div class="lr">
+
+        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="//yastatic.net/share2/share.js"></script>
+        <div style="position: absolute;right: 400px;" class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,telegram" data-counter=""></div>
+
         <div class="l inl"><a href="login">Вход</a></div>
         <div class="r inl"><a href="registration">Регистрация</a></div>
       </div>
