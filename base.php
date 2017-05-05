@@ -50,7 +50,7 @@ if($_POST['url'] == 'login') {
   }
 }
 
-if($_POST['url'] == 'exit') {
+if($_POST['room'] == 'exit') {
   unset( $_SESSION['name'] );
   header('Location: http://' . $_SERVER["HTTP_HOST"]);
 }
