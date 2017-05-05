@@ -1,6 +1,7 @@
 body{
-  /*background: url("img/4.jpg") no-repeat;*/
-  /*background-position: 50% 75px;*/
+  /*background: url("img/1.jpg") no-repeat;
+  background-position: 50% 75px;*/
+  /*background: gainsboro;*/
 }
 .cen{
   /*border: 1px solid black;*/
@@ -82,4 +83,12 @@ body{
 
 ul li{
   text-align: justify;
+}
+
+.tt{
+  border: 1px black solid;
+}
+.tt th, .tt td{
+  border: 1px black solid;
+  text-align: center;
 }
