@@ -32,14 +32,14 @@
 
         <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
         <script src="//yastatic.net/share2/share.js"></script>
-        <div style="position: absolute;right: 367px;" class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,telegram" data-counter=""></div>
+        <div style="position: absolute;right: 286px;" class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,telegram" data-counter=""></div>
 
-        <div style="position: absolute">
+        <div style="position: absolute;right: 135px;">
           <div class="l inl"><a href="login">Вход</a></div>
           <div class="r inl"><a href="registration">Регистрация</a></div>
         </div>
       </div>
-    </div>
+    </div><br>
     <hr>
     <div style="overflow-y: scroll;height: 530px">
       <?php
