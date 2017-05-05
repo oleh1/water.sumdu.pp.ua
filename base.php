@@ -51,8 +51,8 @@ if($_POST['url'] == 'login') {
 }
 
 if($_POST['room'] == 'exit') {
-//  unset( $_SESSION['name'] );
-  session_unregister('name');
+  unset( $_SESSION['name'] );
+//  session_unregister('name');
   header('Location: http://' . $_SERVER["HTTP_HOST"]);
 }
 ?>
