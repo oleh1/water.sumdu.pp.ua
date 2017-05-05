@@ -49,4 +49,9 @@ if($_POST['url'] == 'login') {
     header('Location: http://' . $_SERVER["HTTP_HOST"] . '/' . $url . '?n=10');
   }
 }
+
+if($_POST['url'] == 'exit') {
+  unset( $_SESSION['name'] );
+  header('Location: http://' . $_SERVER["HTTP_HOST"]);
+}
 ?>

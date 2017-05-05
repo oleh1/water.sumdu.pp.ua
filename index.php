@@ -22,7 +22,7 @@
         <?php
         if( $_SESSION['name'] ){
           ?>
-          <div class="inl">Личный кабинет</div>
+          <div class="inl"><a href="room">Личный кабинет</a></div>
           <?php
         }
         ?>
