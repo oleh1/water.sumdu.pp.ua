@@ -27,7 +27,7 @@
       </div>
     </div>
     <hr>
-    <div>
+    <div style="overflow-y: scroll;height: 530px">
       <?php
       $url = $_SERVER['REQUEST_URI'];
       $url = explode('/', $url);

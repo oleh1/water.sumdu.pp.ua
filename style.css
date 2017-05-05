@@ -1,6 +1,10 @@
 body{
-  /*background: url("img/1.jpg") no-repeat;
-  background-position: 50% 75px;*/
+  background: url("img/fon.jpg");
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+  /*background-position: 50% 75px;*/
   /*background: gainsboro;*/
 }
 .cen{
