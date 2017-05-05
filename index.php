@@ -34,8 +34,10 @@
         <script src="//yastatic.net/share2/share.js"></script>
         <div style="position: absolute;right: 367px;" class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,telegram" data-counter=""></div>
 
-        <div class="l inl"><a href="login">Вход</a></div>
-        <div class="r inl"><a href="registration">Регистрация</a></div>
+        <div style="position: absolute">
+          <div class="l inl"><a href="login">Вход</a></div>
+          <div class="r inl"><a href="registration">Регистрация</a></div>
+        </div>
       </div>
     </div>
     <hr>
