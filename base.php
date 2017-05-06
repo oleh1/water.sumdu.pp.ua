@@ -51,10 +51,10 @@ if($_POST['url'] == 'login') {
 }
 
 if($_POST['room'] == 'exit') {
-//  unset( $_SESSION['name'] );
+  unset( $_SESSION['name'] );
 //  session_unregister('name');
 //  session_destroy();
-  $_SESSION['name'] = '';
+//  $_SESSION['name'] = '';
   header('Location: http://' . $_SERVER["HTTP_HOST"] . '?tt=1');
 }
 ?>
