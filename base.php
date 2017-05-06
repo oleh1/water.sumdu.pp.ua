@@ -51,6 +51,7 @@ if($_POST['url'] == 'login') {
 }
 
 if($_POST['room'] == 'exit') {
+  session_start();
   unset( $_SESSION['name'] );
 //  session_unregister('name');
 //  session_destroy();
