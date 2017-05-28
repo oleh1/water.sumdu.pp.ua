@@ -62,7 +62,7 @@ if($_POST['room'] == 'exit') {
 if ( $_POST['articles'] == 'contacts' ){
 
   $to = 'lyboleg@gmail.com';
-  $subject = 'Обратная связь <a href="http://water.sumdu.pp.ua/">water.sumdu.pp.ua</a>';
+  $subject = 'Обратная связь water.sumdu.pp.ua';
   $message = $_POST['text'] . "\r\n" . $_POST['phone'];
   $headers .= "From: ". $_POST['name'] ." <". $_POST['e-mail'] .">\r\n";
   $t = mail($to, $subject, $message, $headers);
