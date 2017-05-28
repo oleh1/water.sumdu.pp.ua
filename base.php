@@ -63,7 +63,7 @@ if ( $_POST['articles'] == 'contacts' ){
 
   $to = 'lyboleg@gmail.com';
   $subject = 'Обратная связь <a href="http://water.sumdu.pp.ua/">water.sumdu.pp.ua</a>';
-  $message = $_POST['text'];
+  $message = $_POST['text'] . "\r\n" . $_POST['phone'];
   $headers .= "From: ". $_POST['name'] ." <". $_POST['e-mail'] .">\r\n";
   $t = mail($to, $subject, $message, $headers);
 
