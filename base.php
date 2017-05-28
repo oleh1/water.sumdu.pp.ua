@@ -61,7 +61,7 @@ if($_POST['room'] == 'exit') {
 
 if ( $_POST['articles'] == 'contacts' ){
 
-  $to = 'lyboleg@gmail.com';
+  $to = 'juliia.m@yahoo.com';
   $subject = 'Обратная связь water.sumdu.pp.ua';
   $message = $_POST['text'] . "\r\n" . $_POST['phone'];
   $headers .= "From: ". $_POST['name'] ." <". $_POST['e-mail'] .">\r\n";
@@ -70,8 +70,6 @@ if ( $_POST['articles'] == 'contacts' ){
   if($t){$r = 1;}else{$r = 0;}
 
   header('Location: http://' . $_SERVER["HTTP_HOST"] .'/'. $_POST['articles'] . '?' . $r);
-
-
-
+  
 }
 ?>
