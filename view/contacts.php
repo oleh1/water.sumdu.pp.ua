@@ -29,5 +29,19 @@
     <div class="textt">Кафедра Информационные технологии проектирования</div>
     <div class="textt">Украина, г. Сумы, ул. Римского-Корсакова, 2</div>
     <div class="textt">2017</div>
+
+    <div style="margin: 15px 0 0 30px;">
+      <div style="color: green;font-size: 30px;">Обратная связь</div>
+      <form action="../base.php" method="post">
+        <input type="hidden" name="articles" value="contacts">
+        Фамилия Имя Отчество <input style="margin: 0 0 0 33px;" name="name" type="text" required><br>
+        Адрес проживания <input style="margin: 0 0 0 76px;" name="address" type="text" required><br>
+        Контактные телефоны <input style="margin: 0 0 0 46px;" name="phone" type="text" required><br>
+        Электронный адрес (e-mail) <input name="e-mail" type="text" required><br>
+        <textarea style="margin: 8px 0 0 0;width: 410px;" name="text" placeholder="Пожалуйста, введите текст обращения"></textarea><br>
+        <input type="submit" value="Отправить обращение">
+      </form>
+    </div>
+
   </div>
 </div>

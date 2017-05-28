@@ -58,4 +58,20 @@ if($_POST['room'] == 'exit') {
 //  $_SESSION['name'] = '';
   header('Location: http://' . $_SERVER["HTTP_HOST"] . '?tt=1');
 }
+
+if ( $_POST['articles'] == 'contacts' ){
+
+  $to = 'lyboleg@gmail.com';
+  $subject = 'Обратный звонок';
+  $message = 'test';
+  $headers .= "From: Отправитель <from@example.com>\r\n";
+  $t = mail($to, $subject, $message, $headers);
+
+  if($t){$r = 1;}else{$r = 0;}
+
+  header('Location: http://' . $_SERVER["HTTP_HOST"] .'/'. $_POST['articles'] . '?' . $r);
+
+
+
+}
 ?>

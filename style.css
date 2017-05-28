@@ -14,7 +14,7 @@ body{
 }
 .hmsc{
   float: left;
-  margin: 0 312px 0 0;
+  margin: 0 211px 0 0;
 }
 .h{
 
@@ -41,6 +41,9 @@ body{
 .inl{
   display: inline-block;
   margin: 0 10px 0 0;
+  background: deepskyblue;
+  padding: 3px 9px;
+  border-radius: 4px;
 }
 .form_regi{
   margin: 25px 0 0 0;
