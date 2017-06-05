@@ -22,7 +22,7 @@
 <!--    <div class="textt">Вода – очень интересная и уникальная субстанция, которая существует на нашей Земле. Люди долгое время изучают свойства этого замечательного вещества, но так и не знают всех его возможностей.</div>-->
 <!--    <div class="textt">Целью данного информационного ресурса является сохранение и мониторинг качества питьевой воды в Сумской области. Что позволяет жителям области своевременно получать информацию об ухудшении состояния и применять оперативные меры по улучшению качества воды в различных регионах Сумской области.</div>-->
     <h4 class="textt">РАЗРАБОТЧИКИ</h4>
-    <div class="textt">Мица Юлия, iylia0423@mail.ru</div>
+    <div class="textt">Мица Юлия, juliia.m@yahoo.com</div>
     <div class="textt">Алексенко Ольга, aleksenko.olga@gmail.com</div>
     <h4 class="textt">АДРЕСС</h4>
     <div class="textt">Сумской Государственный Университет</div>
@@ -31,7 +31,7 @@
     <div class="textt">2017</div>
 
     <div style="margin: 15px 0 0 30px;">
-      <div style="color: green;font-size: 30px;">Обратная связь</div>
+      <h4 style="">Форма обратной связи</h4>
       <form action="../base.php" method="post">
         <input type="hidden" name="articles" value="contacts">
         Фамилия Имя Отчество <input style="margin: 0 0 0 33px;" name="name" type="text" required><br>
