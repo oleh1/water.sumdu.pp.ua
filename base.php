@@ -72,4 +72,5 @@ if ( $_POST['articles'] == 'contacts' ){
   header('Location: http://' . $_SERVER["HTTP_HOST"] .'/'. $_POST['articles'] . '?' . $r);
   
 }
+
 ?>
